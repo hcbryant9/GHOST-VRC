@@ -9,13 +9,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.cinemachine": {
-      "version": "2.8.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.collab-proxy": {
       "version": "1.6.0",
       "depth": 0,
@@ -55,15 +48,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.inputsystem": {
-      "version": "1.2.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.mathematics": {
       "version": "1.2.5",
       "depth": 1,
@@ -72,7 +56,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.2",
+      "version": "3.0.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -142,6 +126,12 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.vrchat.avatars": {
+      "version": "file:com.vrchat.avatars",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.vrchat.base": {
       "version": "file:com.vrchat.base",
       "depth": 0,
@@ -149,49 +139,36 @@
       "dependencies": {
         "com.unity.burst": "1.4.11",
         "com.unity.mathematics": "1.2.5",
-        "com.unity.nuget.newtonsoft-json": "2.0.2"
-      }
-    },
-    "com.vrchat.clientsim": {
-      "version": "file:com.vrchat.clientsim",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.xr.oculus.standalone": "2.38.4",
-        "com.unity.inputsystem": "1.2.0"
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
       }
     },
     "com.vrchat.core.bootstrap": {
       "version": "file:com.vrchat.core.bootstrap",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.2"
-      }
+      "dependencies": {}
     },
     "com.vrchat.core.vpm-resolver": {
       "version": "file:com.vrchat.core.vpm-resolver",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.2"
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
       }
     },
-    "com.vrchat.udonsharp": {
-      "version": "file:com.vrchat.udonsharp",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "com.vrchat.worlds": {
-      "version": "file:com.vrchat.worlds",
+    "dev.onevr.vrworldtoolkit": {
+      "version": "file:dev.onevr.vrworldtoolkit",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.unity.cinemachine": "2.8.0",
-        "com.unity.postprocessing": "3.1.1",
-        "com.unity.textmeshpro": "2.1.6"
+        "com.unity.postprocessing": "3.1.1"
       }
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "file:vrchat.blackstartx.gesture-manager",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
