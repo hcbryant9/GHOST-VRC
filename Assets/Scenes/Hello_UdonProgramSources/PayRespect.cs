@@ -10,10 +10,7 @@ public class PayRespect : UdonSharpBehaviour
     private float dropTime = 0f;
     public GhostAnimator ghost;
     
-    void Start()
-    {
-        
-    }
+   
     void DestroySelf()
     {
 
