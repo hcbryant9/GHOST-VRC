@@ -18,7 +18,7 @@ public class GhostAnimator : UdonSharpBehaviour
         anim.enabled = true;
         if(script != null)
         {
-            script.SendScript();
+            script.SendScript("hello world");
         }
         else
         {

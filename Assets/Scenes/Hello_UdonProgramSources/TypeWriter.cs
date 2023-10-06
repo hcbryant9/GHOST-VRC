@@ -17,6 +17,7 @@ public class TypeWriter : UdonSharpBehaviour
         {
             if (!isTyping)
             {
+                textObject.text = "";
                 typingProgress = 0;
                 isTyping = true;
             }

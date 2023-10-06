@@ -15,8 +15,7 @@ public class FollowPlayerScript : UdonSharpBehaviour
 
     private void Update()
     {
-        //Vector3 distanceToPlayer = playerPosition - transform.position;
-        //float distanceToPlayerF = distanceToPlayer.magnitude;
+        
         
        
         playerPosition = Networking.LocalPlayer.GetPosition();

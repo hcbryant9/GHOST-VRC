@@ -8,11 +8,11 @@ public class GhostScript : UdonSharpBehaviour
 {
     public TypeWriter writer;
     
-    public void SendScript()
+    public void SendScript(string message)
     {
         if (writer != null)
         {
-            writer.Write("hello world, today we will be talking about how I became a ghost in a very fun and interesting way omg");
+            writer.Write(message);
             
         } else
         {
