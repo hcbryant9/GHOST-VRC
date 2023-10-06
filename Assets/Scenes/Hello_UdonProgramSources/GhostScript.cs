@@ -20,4 +20,8 @@ public class GhostScript : UdonSharpBehaviour
         }
         
     }
+    public void ClearText()
+    {
+        writer.ResetTyping();
+    }
 }
