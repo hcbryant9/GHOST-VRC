@@ -7,38 +7,53 @@ using UnityEngine.UI;
 
 public class TypeWriter : UdonSharpBehaviour
 {
-    public TMPro.TextMeshProUGUI textObject;
-    [UdonSynced]private bool isTyping = false;
-    [UdonSynced]private int typingProgress = 0;
+    public TMPro.TextMeshProUGUI textObjectKor;
+    public TMPro.TextMeshProUGUI textObjectEng;
+    public RawImage textbox;
+    public GameManager manager;
     
     public void Write(string message)
     {
-        if(textObject != null)
+        if(manager != null)
         {
-            if (!isTyping)
+            //is english -> write to the english textbox
+            if (manager.isEnglish)
             {
-                textObject.text = "";
-                typingProgress = 0;
-                isTyping = true;
+                if (textObjectEng != null)
+                {
+                    textbox.enabled = true;
+                    textObjectEng.text = message;
+                }
+                else
+                {
+                    Debug.Log("english textbox is null");
+                }
             }
-            while(typingProgress < message.Length)
+            else
             {
-                textObject.text += message[typingProgress];
-                typingProgress++;
+                if(textObjectKor != null)
+                {
+                    textbox.enabled = true;
+                    textObjectKor.text = message;
+                }
+                else
+                {
+                    Debug.Log("korean textbox is null");
+                }
             }
-            
-            isTyping = false;
-            
+        
         } else
         {
-            Debug.Log("TMPro object is empty");
+            Debug.Log("manager is null");
         }
+       
         
     }
     public void ResetTyping()
     {
-        isTyping = false;
-        typingProgress = 0;
-        textObject.text = "";
+        
+        textbox.enabled = false;
+        textObjectEng.text = "";
+        textObjectKor.text = "";
     }
 }
