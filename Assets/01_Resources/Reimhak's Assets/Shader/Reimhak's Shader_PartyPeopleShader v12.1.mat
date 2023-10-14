@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Reimhak's Shader_PartyPeopleShader v12.1
+  m_Shader: {fileID: 4800000, guid: d2c660e8269d901408f109f080be40c8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GlitchTex:
+        m_Texture: {fileID: 2800000, guid: c15eacd99a1861b4a8084a53a657bbb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LerpTex:
+        m_Texture: {fileID: 2800000, guid: 0c60776af9c5dae4a940f0e02c06e16c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Opacity:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionMap:
+        m_Texture: {fileID: 2800000, guid: 91165df292374a449aa2861e8982a7bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SPTexture1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SPTexture2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 2800000, guid: 157d1e8427d146842bc25173a8327132, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Text:
+        m_Texture: {fileID: 2800000, guid: 0c60776af9c5dae4a940f0e02c06e16c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Angle: 0
+    - _Angle2: 0
+    - _Autosl: 20
+    - _Autosl2: 0
+    - _B: 0
+    - _BlueX: 0.01
+    - _BlueY: -0.01
+    - _CHROMA: 0
+    - _CSEnable: 1
+    - _CSWidth: 0
+    - _CSizex: 0
+    - _CSizey: 0
+    - _CUVPosx: 0
+    - _CUVPosy: 0
+    - _ChromAberrAmountX: 0
+    - _ChromAberrAmountY: 0.1
+    - _Cull: 1
+    - _Cutoff: 1
+    - _Diff: 0
+    - _DiffRange: 10
+    - _Distortion: 0
+    - _Distortionx: 0
+    - _Distortiony: 0
+    - _EdgeZ: 0
+    - _FadeIn: 0
+    - _FadeOut: 10000
+    - _G: 0
+    - _GIntensity: 0.7
+    - _GUV: 0
+    - _GlitchSpeed: 2
+    - _GlitchToggle: 1
+    - _GreenX: 0.01
+    - _GreenY: -0.01
+    - _HUE: 0
+    - _Hue: 0
+    - _HueS: 2
+    - _Intensity: 1
+    - _LeftStripesAmount: 100
+    - _LeftStripesFill: 0.7
+    - _Length: 250
+    - _LineAlpha: 0
+    - _NAngle: 1
+    - _NPRotation: 0
+    - _NPSize: 0
+    - _NPW: 0
+    - _NPoly: 5
+    - _Ndis: 1
+    - _Nloop: 0
+    - _NoiseAuto: 0.2
+    - _NoisePos: 0
+    - _NoiseSize: 0
+    - _NormalIntensity: 0
+    - _Nw: 0
+    - _R: 0
+    - _RGBNoise: 0
+    - _Rainbow: 0
+    - _Rainbow2: 0
+    - _RandLine: 1
+    - _RedX: 0.01
+    - _RedY: -0.01
+    - _ReflectionValue: 0.5
+    - _RightStripesAmount: 5
+    - _RightStripesFill: 0.7
+    - _SP: 1
+    - _SPAlpha: 1
+    - _SPP: 1
+    - _SPlerp1: 0
+    - _SPlerp2: 0
+    - _Sat: 1
+    - _Scale: 0
+    - _Stlipe: 0
+    - _TAlpha: 0
+    - _TSize: 50
+    - _TUVx: 0
+    - _TUVy: 0
+    - _TextSW: 0
+    - _Thick: 1
+    - _Thick2: 1
+    - _TxSize: 1
+    - _TxSizex: 1
+    - _TxSizey: 1
+    - _TxSlider: 0
+    - _TxUVx: 0
+    - _TxUVy: 0
+    - _Txlength: 0
+    - _UVScale: 0.5
+    - _UVWidthx: 1
+    - _UVWidthy: 1
+    - _Val: 1
+    - _View: 0
+    - _WavyDisplFreq: 1
+    - _Ztest: 8
+    - _bb: 1
+    - _blur: 1
+    - _bw: 0
+    - _gg: 1
+    - _glitch1: 0
+    - _glitch2: 0
+    - _lerpstr: 19.75
+    - _lerptextgl: 1
+    - _lerptexx: 1.2
+    - _lerptexy: 1
+    - _monno: 0
+    - _nega: 0
+    - _prog: 1
+    - _rr: 1
+    - _sl: 0
+    - _sl2: 0
+    - _str: 5
+    - _sz: 0
+    - _tAlpha: 1
+    - _tt1: 0
+    - _tt2: 0
+    - _tt3: 0
+    - _tt4: 0
+    - _tt5: 0
+    - _vignette: 0
+    - _yure: 0
+    - _yurex: 0
+    - _yurey: 0
+    m_Colors:
+    - _CColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CSColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DisplacementAmount: {r: 2, g: -5, b: 5, a: 0}
+    - _EdgeCol: {r: 1, g: 1, b: 1, a: 1}
+    - _NColor: {r: 1, g: 1, b: 1, a: 1}
+    - _NPEdgeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _NPFillColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Npos: {r: 0.2, g: 0.8, b: 2, a: 3}
+    - _SPColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SPcol: {r: 1, g: 1, b: 1, a: 1}
+    - _Stlipe_c: {r: 0, g: 0, b: 0, a: 1}
+    - _Stlipe_col: {r: 1, g: 1, b: 1, a: 1}
+    - _TColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _TColor2: {r: 0, g: 0, b: 0, a: 0}
+    - _tColor: {r: 1, g: 1, b: 1, a: 0}
+    - _vignetteColor: {r: 0, g: 0, b: 0, a: 1}
