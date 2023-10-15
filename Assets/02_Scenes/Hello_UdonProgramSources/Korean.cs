@@ -8,19 +8,20 @@ public class Korean : UdonSharpBehaviour
 {
 
     public GameManager manager;
-    public GameObject teleport;
+    //public GameObject teleport;
     private VRCPlayerApi localPlayer;
     private void Start()
     {
         localPlayer = Networking.LocalPlayer;
     }
-    void OnDrop()
+    //void OnDrop()
+    void Interact()
     {
         manager.isEnglish = false;
         Debug.Log("english");
 
 
-        if (localPlayer != null)
+        /*if (localPlayer != null)
         {
             if (teleport != null)
             {
@@ -36,7 +37,7 @@ public class Korean : UdonSharpBehaviour
         else
         {
             Debug.Log("player is null");
-        }
+        }*/
 
     }
 

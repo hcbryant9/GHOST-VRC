@@ -7,19 +7,20 @@ using VRC.Udon;
 public class English : UdonSharpBehaviour
 {
     public GameManager manager;
-    public GameObject teleport;
+    //public GameObject teleport;
     private VRCPlayerApi localPlayer;
     private void Start()
     {
         localPlayer = Networking.LocalPlayer;
     }
-    void OnDrop()
+    //void OnDrop()
+    void Interact()
     {
         manager.isEnglish = true;
         Debug.Log("english");
 
         
-        if (localPlayer != null)
+        /*if (localPlayer != null)
         {
             if (teleport != null)
             {
@@ -35,7 +36,7 @@ public class English : UdonSharpBehaviour
         else
         {
             Debug.Log("player is null");
-        }
+        }*/
 
     }
 
