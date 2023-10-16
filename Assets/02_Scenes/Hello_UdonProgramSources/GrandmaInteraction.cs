@@ -101,5 +101,6 @@ public class GrandmaInteraction : UdonSharpBehaviour
         playerIsInArea = false;
         scriptCounter = 0;
         script.ClearText();
+        manager.hasStarted = true;
     }
 }

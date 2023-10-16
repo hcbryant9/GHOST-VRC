@@ -8,6 +8,7 @@ public class GameManager : UdonSharpBehaviour
 {
     //if is english is true - english , if it is false - korean
     public bool isEnglish;
+    public bool hasStarted = false;
     void Start()
     {
         
