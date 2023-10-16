@@ -9,9 +9,19 @@ public class TypeWriter : UdonSharpBehaviour
 {
     public TMPro.TextMeshProUGUI textObjectKor;
     public TMPro.TextMeshProUGUI textObjectEng;
-    public RawImage textbox;
+    private Image textbox;
     public GameManager manager;
-    
+
+    public GameObject pane;
+
+
+    private void Start()
+    {
+       
+
+        textbox = pane.GetComponent<Image>();
+
+    }
     public void Write(string message)
     {
         if(manager != null)
