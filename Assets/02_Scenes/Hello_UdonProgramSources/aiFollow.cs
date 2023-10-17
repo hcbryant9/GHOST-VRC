@@ -22,7 +22,8 @@ public class aiFollow : UdonSharpBehaviour
         player.y = player.y + 1;
         if (player != null)
         {
-            if (manager.hasStarted)
+            //should follow -> should the grandma be following at this point?
+            if (manager.shouldFollow)
             {
                 float distanceToPlayer = Vector3.Distance(transform.position, player);
 
