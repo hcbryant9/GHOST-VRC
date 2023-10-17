@@ -374,7 +374,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20970
+  m_Name: pb_Mesh20972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11612,8 +11612,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148559553025}
   m_LocalRotation: {x: -0, y: 0.9378748, z: -0, w: 0.3469741}
-  m_LocalPosition: {x: 13.709897, y: 2.243, z: 13.686204}
-  m_LocalScale: {x: 13.972972, y: 13.972972, z: 13.972972}
+  m_LocalPosition: {x: 13.709897, y: 2.55, z: 13.686204}
+  m_LocalScale: {x: 14, y: 14, z: 14}
   m_Children:
   - {fileID: 8064439587041849997}
   - {fileID: 4807164980517238313}
@@ -12657,7 +12657,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 0.1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &919132148559553027
@@ -24791,6 +24791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8064439587041849997}
   - component: {fileID: 7819968719497625080}
+  - component: {fileID: 4493062461966313640}
   m_Layer: 0
   m_Name: geomGrandma
   m_TagString: Untagged
@@ -24798,6 +24799,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4493062461966313640
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493062461966313639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9196810179449945830, guid: 0317fe590b738a4499ae7dc05cc7d585, type: 3}
 --- !u!33 &4507798094139797521
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -33677,8 +33692,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4493062461966313639}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1933196, y: 2.1933196, z: 2.1933196}
+  m_LocalPosition: {x: -0.000000021145, y: -0.00040004, z: -0.0022671}
+  m_LocalScale: {x: 2.214885, y: 2.214885, z: 2.214885}
   m_Children: []
   m_Father: {fileID: 543450653087299771}
   m_RootOrder: 0

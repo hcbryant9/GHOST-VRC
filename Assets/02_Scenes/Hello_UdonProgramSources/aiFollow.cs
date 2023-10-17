@@ -18,6 +18,8 @@ public class aiFollow : UdonSharpBehaviour
 
     void Update()
     {
+        player = Networking.LocalPlayer.GetPosition();
+        player.y = player.y + 1;
         if (player != null)
         {
             if (manager.hasStarted)
