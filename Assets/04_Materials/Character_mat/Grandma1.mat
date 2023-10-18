@@ -3063,5 +3063,5 @@ Material:
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _VideoResolution: {r: 1280, g: 720, b: 0, a: 0}
     - _bloomcol: {r: 0.5188679, g: 0.8156567, b: 1, a: 1}
-    - _col: {r: 0.6698113, g: 0.8703886, b: 1, a: 1}
+    - _col: {r: 0.6698113, g: 0.8703886, b: 1, a: 0.98039216}
     - _scroll: {r: 0.5, g: 0.2, b: 0, a: 0}

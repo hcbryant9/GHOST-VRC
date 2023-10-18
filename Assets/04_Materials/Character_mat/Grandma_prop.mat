@@ -7,16 +7,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Grandma2
-  m_Shader: {fileID: 4800000, guid: 5ca92f1e9fc35504aba297fd1acd62df, type: 3}
+  m_Name: Grandma_prop
+  m_Shader: {fileID: 4800000, guid: f7b25a4944f852a49a1194449da702f1, type: 3}
   m_ShaderKeywords: POSTPROCESS VIGNETTE_MASKED _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
     _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -50,6 +49,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BacklightColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BloomTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -366,6 +369,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MultilayerMathBlurMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_tex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -738,6 +745,7 @@ Material:
     - _BacklightNormalStrength: 1
     - _BacklightReceiveShadow: 1
     - _BacklightViewStrength: 1
+    - _Base: 0
     - _BaseColor_Step: 0.5
     - _BaseShade_Feather: 0.0001
     - _BlackLightMasking0GlobalMaskBlendType: 0
@@ -809,7 +817,9 @@ Material:
     - _ClothMetallicSmoothnessMapUV: 0
     - _ClothReflectance: 0.5
     - _ClothSmoothness: 0.5
+    - _ColorCount: 18
     - _ColorMask: 15
+    - _ColorSpeed: 1
     - _ColorThemeIndex: 0
     - _Comp: 8
     - _ContinuousDissolve: 0
@@ -833,6 +843,7 @@ Material:
     - _CubeMapUVMode: 1
     - _CubeMapWorldNormalsStrength: 1
     - _Cull: 2
+    - _CullMode: 2
     - _CurvFix: 1
     - _CurvatureU: 0
     - _CurvatureV: 0
@@ -2094,7 +2105,7 @@ Material:
     - _RimMaskInvert: 0
     - _RimMaskUV: 0
     - _RimNormalStrength: 1
-    - _RimPower: 1
+    - _RimPower: 0.86
     - _RimShadowMask: 0.5
     - _RimShadowMaskInvert: 0
     - _RimShadowMaskRampType: 0
@@ -2153,6 +2164,7 @@ Material:
     - _SkinThicknessMapUV: 0
     - _SkinThicknessPower: 1
     - _SkyboxSize: 1
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular2ndLayer: 0
     - _SpecularHighlights: 1
@@ -2338,9 +2350,17 @@ Material:
     - _VisibilityVRCMirrorDesktop: 1
     - _VisibilityVRCMirrorVR: 1
     - _VisibilityVRCRegular: 1
+    - _WaveMultiply: 0.02
+    - _WavePower: 10
+    - _WaveSpeed: 10
     - _ZTest: 4
     - _ZWrite: 0
+    - _brightness: 0.18
     - _glitterFrequencyLinearEmissive: 20
+    - _knee: 2.93
+    - _range: 0.41
+    - _softknee: 0.39
+    - _threshold: 0.72
     - footer_discord: 0
     - footer_github: 0
     - footer_patreon: 0
@@ -2761,7 +2781,7 @@ Material:
     - _ClearCoatSpecularTint: {r: 1, g: 1, b: 1, a: 1}
     - _ClippingMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClothMetallicSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.8359737, g: 0.92241555, b: 0.95283014, a: 0.1764706}
+    - _Color: {r: 0.0024919957, g: 0.19391625, b: 0.26415092, a: 1}
     - _CubeMapColor: {r: 1, g: 1, b: 1, a: 1}
     - _CubeMapMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _CubeMapRotation: {r: 0, g: 0, b: 0, a: 0}
@@ -3050,3 +3070,6 @@ Material:
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _VideoResolution: {r: 1280, g: 720, b: 0, a: 0}
+    - _bloomcol: {r: 0.015686275, g: 0.015686275, b: 0.015686275, a: 1}
+    - _col: {r: 0.12264148, g: 0.12264148, b: 0.12264148, a: 0.9372549}
+    - _scroll: {r: 0, g: 0, b: 0, a: 0}
