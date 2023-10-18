@@ -9,6 +9,7 @@ public class English : UdonSharpBehaviour
     public GameManager manager;
     //public GameObject teleport;
     private VRCPlayerApi localPlayer;
+    public AudioSource ambient;
     private void Start()
     {
         localPlayer = Networking.LocalPlayer;
@@ -18,8 +19,11 @@ public class English : UdonSharpBehaviour
     {
         manager.isEnglish = true;
         Debug.Log("english");
+        if (ambient != null)
+        {
+            ambient.Play();
+        }
 
-        
         /*if (localPlayer != null)
         {
             if (teleport != null)
