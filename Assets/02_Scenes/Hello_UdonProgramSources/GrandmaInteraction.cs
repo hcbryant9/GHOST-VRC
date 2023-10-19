@@ -26,7 +26,7 @@ public class GrandmaInteraction : UdonSharpBehaviour
         "No one I'm aware of.",
         "No one truly knows anyone, same for oneself.",
         "The ghosts you see are evoked by their reminders here. They'll be just as real as they ever were, they just, like myself, have a little less autonomy",
-        "Ah, there I go being cryptic agai; it's the only thing the dead know how to be.",
+        "Ah, there I go being cryptic again; it's the only thing the dead know how to be.",
         "There's much to learn; let's go!"
     };
     private string[] scriptArrKorIntro = new string[]

@@ -20,7 +20,11 @@ public class Korean : UdonSharpBehaviour
     {
         manager.isEnglish = false;
         Debug.Log("english");
-        ambient.Play();
+        if (ambient != null)
+        {
+            ambient.Play();
+        }
+      
 
 
         /*if (localPlayer != null)

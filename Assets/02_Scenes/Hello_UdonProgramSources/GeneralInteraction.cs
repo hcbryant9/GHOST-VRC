@@ -8,6 +8,7 @@ public class GeneralInteraction : UdonSharpBehaviour
 {
     private VRCPlayerApi localPlayer;
     public GameManager manager;
+  
     void Start()
     {
         localPlayer = Networking.LocalPlayer;
@@ -15,5 +16,6 @@ public class GeneralInteraction : UdonSharpBehaviour
     private void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
         {
         manager.generalInteraction = true;
+        
         }
     }

@@ -15,6 +15,9 @@ public class GameManager : UdonSharpBehaviour
 
     //for interaction with general
     public bool generalInteraction = false;
+
+    public bool loverInteraction = false;
+
     void Start()
     {
         
