@@ -4399,7 +4399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTextPlacement: {fileID: 0}
-  interactText: Use
+  interactText: 
   interactTextGO: {fileID: 0}
   proximity: 2
   SynchronizePosition: 0
@@ -6425,7 +6425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTextPlacement: {fileID: 0}
-  interactText: Use
+  interactText: English
   interactTextGO: {fileID: 0}
   proximity: 2
   SynchronizePosition: 0
@@ -23372,7 +23372,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
+      scalar: 2.5
       minScalar: 0.7
       maxCurve:
         serializedVersion: 2
@@ -24619,9 +24619,9 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.7830189, g: 0.9758629, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.7921569}
-        key2: {r: 0, g: 0, b: 0, a: 0.67058825}
-        key3: {r: 0, g: 0, b: 0, a: 0}
+        key1: {r: 1, g: 1, b: 1, a: 0.8627451}
+        key2: {r: 0, g: 0, b: 0, a: 0.75686276}
+        key3: {r: 0, g: 0, b: 0, a: 0.12156863}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -24635,9 +24635,9 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 6746
-        atime2: 17540
-        atime3: 49922
+        atime1: 3662
+        atime2: 38936
+        atime3: 54163
         atime4: 65535
         atime5: 0
         atime6: 0

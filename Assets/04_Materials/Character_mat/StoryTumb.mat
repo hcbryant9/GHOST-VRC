@@ -3208,8 +3208,8 @@ Material:
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _VideoResolution: {r: 1280, g: 720, b: 0, a: 0}
-    - _bloomcol: {r: 1.2108425, g: 1.2108425, b: 1.1797953, a: 1}
-    - _col: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+    - _bloomcol: {r: 0.64527553, g: 0.8886642, b: 0.99129283, a: 1}
+    - _col: {r: 0.11764705, g: 0.17525037, b: 0.3019608, a: 1}
     - _scroll: {r: 0, g: 0.01, b: 0, a: 0}
     - _tColor: {r: 1, g: 1, b: 1, a: 0}
     - _vignetteColor: {r: 0, g: 0, b: 0, a: 1}
