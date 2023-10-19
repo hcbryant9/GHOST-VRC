@@ -13,8 +13,11 @@ public class PayRespect : UdonSharpBehaviour
    
     void DestroySelf()
     {
-
-        ghost.PlayAnimation();
+        if (ghost != null)
+        {
+            ghost.PlayAnimation();
+        }
+        
         gameObject.SetActive(false);
         Destroy(gameObject, 1f);
     }

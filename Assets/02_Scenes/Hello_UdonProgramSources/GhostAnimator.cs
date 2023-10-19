@@ -58,7 +58,7 @@ public class GhostAnimator : UdonSharpBehaviour
         anim.enabled = true;
 
         //sending the script over
-        if (script != null && (!(manager.firstInteraction)))
+        if (script != null)
         {
             
             //if english is true -> english if false -> korean
