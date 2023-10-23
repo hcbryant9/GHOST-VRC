@@ -10,7 +10,7 @@ public class GhostAnimator : UdonSharpBehaviour
     private Animator anim;
     public GhostScript script;
     private int scriptCounter = 0;
-    private int length = 6;
+    private int length = 8;
     private bool canAdvanceText = false;
     private string[] scriptArrEngIntro = new string[]
     {

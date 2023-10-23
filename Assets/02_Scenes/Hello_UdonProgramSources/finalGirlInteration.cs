@@ -11,6 +11,9 @@ public class finalGirlInteration : UdonSharpBehaviour
     public GameManager manager;
     public GhostScript script;
 
+    //star spawning object
+    public StarsSpawn spawner;
+
     private bool canAdvanceText = false;
     private int scriptCounter = 0;
     private int length = 4;
@@ -36,7 +39,9 @@ public class finalGirlInteration : UdonSharpBehaviour
         localPlayer = Networking.LocalPlayer;
     }
     private void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
+
     {
+        Debug.Log("Player has entered the interaction zone");
         if (script != null)
         {
 
@@ -60,6 +65,12 @@ public class finalGirlInteration : UdonSharpBehaviour
             Debug.Log("the script for lover is null");
         }
     }
+    private void OnPlayerTriggerExit(VRC.SDKBase.VRCPlayerApi player)
+    {
+        script.ClearText();
+        scriptCounter = 0;
+        canAdvanceText = false;
+    }
     private void Update()
     {
         if (canAdvanceText)
@@ -81,7 +92,7 @@ public class finalGirlInteration : UdonSharpBehaviour
                 if (scriptCounter > length)
                 { 
                     canAdvanceText = false;
-
+                    spawner.SpawnObject();
                 }
             }
         }
