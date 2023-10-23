@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.008440568, g: 0.021914424, b: 0.06839663, a: 1}
+  m_IndirectSpecularColor: {r: 0.008440567, g: 0.021914508, b: 0.06839694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14246,7 +14246,7 @@ Transform:
   - {fileID: 870575199}
   - {fileID: 992283160}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 38.445004, z: 0}
 --- !u!4 &543450651875190875
 Transform:
@@ -16518,7 +16518,7 @@ Transform:
   - {fileID: 489657731}
   - {fileID: 1562274636}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 39.374, z: 0}
 --- !u!4 &1119699460091961256
 Transform:
@@ -37366,7 +37366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3592ab4ba9fc5654c9da11c9de4fdb34, type: 3}
+  - {fileID: 2100000, guid: e1a2ca6abaf5ec640bdb0faf128a16f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42228,7 +42228,7 @@ Transform:
   - {fileID: 1005408827642708179}
   - {fileID: 2129719402}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 182.05699, z: 0}
 --- !u!1 &5250621833039146872
 GameObject:
@@ -46936,7 +46936,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 3592ab4ba9fc5654c9da11c9de4fdb34, type: 3}
+  - {fileID: 2100000, guid: e1a2ca6abaf5ec640bdb0faf128a16f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
