@@ -18,6 +18,7 @@ public class GameManager : UdonSharpBehaviour
 
     public bool loverInteraction = false;
 
+    public int trashCount = 0;
     void Start()
     {
         
