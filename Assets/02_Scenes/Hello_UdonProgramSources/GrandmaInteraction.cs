@@ -7,6 +7,9 @@ using VRC.SDK3.Components;
 
 public class GrandmaInteraction : UdonSharpBehaviour
 {
+    //particle changer
+    public ParticleColorChanger particleColorChanger;
+    //script
     public GameManager manager;
     public GhostScript script;
     public int scriptSizeIntro = 10;
@@ -112,6 +115,12 @@ public class GrandmaInteraction : UdonSharpBehaviour
         }
             scriptCounter++;
             canAdvanceText = true;
+            //changing particle system once we see gma
+            if (particleColorChanger != null)
+            {
+                particleColorChanger.ChangeParticleColorPresent(1);
+            }
+            
         } else
         {
             Debug.Log("the script for gma is null");
@@ -136,6 +145,12 @@ public class GrandmaInteraction : UdonSharpBehaviour
                 }
                 scriptCounter++;
                 canAdvanceText = true;
+                //increasing the particle color after general
+                if(particleColorChanger!= null)
+                {
+                    particleColorChanger.ChangeParticleColorPresent(2);
+                }
+                
             }
             else
             {
