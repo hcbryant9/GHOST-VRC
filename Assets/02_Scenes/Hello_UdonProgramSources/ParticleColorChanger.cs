@@ -6,13 +6,23 @@ using VRC.Udon;
 
 public class ParticleColorChanger : UdonSharpBehaviour
 {
+    //for the particles
     public ParticleSystem particleSystem;
     public Gradient[] colorPresets;
+
+    //for the sky
+    public Color[] skyColors;
+    public Material skyMaterial;
+    private int currentColorIndex = 0;
     void Start()
     {
         if (particleSystem != null && colorPresets != null)
         {
             ChangeParticleColorPresent(0);
+        }
+        if(skyMaterial != null && skyColors != null)
+        {
+
         }
     }
     public void ChangeParticleColorPresent(int presetIndex)
@@ -28,5 +38,16 @@ public class ParticleColorChanger : UdonSharpBehaviour
 
         // Apply the chosen color preset
         colorOverLifetime.color = colorPresets[presetIndex];
+
+        //changing the sky
+        ChangeSkyColorPresent(presetIndex);
+    }
+    void ChangeSkyColorPresent(int colorIndex)
+    {
+        if (skyMaterial != null && colorIndex >= 0 && colorIndex < skyColors.Length)
+        {
+            skyMaterial.SetColor("_Tint", skyColors[colorIndex]);
+            currentColorIndex = colorIndex;
+        }
     }
 }
