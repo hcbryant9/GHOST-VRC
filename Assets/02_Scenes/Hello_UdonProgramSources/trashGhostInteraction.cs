@@ -20,6 +20,9 @@ public class trashGhostInteraction : UdonSharpBehaviour
     private int scriptCounter = 0;
     private int length = 6;
 
+    //particles
+    public ParticleColorChanger particleColorChanger;
+
     private string[] scriptArrEngTrash = new string[]
     {
         "Greetings, traveler.",
@@ -63,6 +66,10 @@ public class trashGhostInteraction : UdonSharpBehaviour
             }
             scriptCounter++;
             canAdvanceText = true;
+            if (particleColorChanger!= null)
+            {
+                particleColorChanger.ChangeParticleColorPresent(5);
+            }
         }
         else
         {

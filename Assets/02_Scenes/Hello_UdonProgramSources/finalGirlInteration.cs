@@ -18,6 +18,9 @@ public class finalGirlInteration : UdonSharpBehaviour
     private int scriptCounter = 0;
     private int length = 4;
 
+    //particles
+    public ParticleColorChanger particleColorChanger;
+
     private string[] scriptArrEngFinal = new string[]
     {
         "I am the soul of a young girl trapped in an eternal night, terrified of the devouring silence and darkness.",
@@ -59,6 +62,10 @@ public class finalGirlInteration : UdonSharpBehaviour
             }
             scriptCounter++;
             canAdvanceText = true;
+            if(particleColorChanger != null)
+            {
+                particleColorChanger.ChangeParticleColorPresent(6);
+            }
         }
         else
         {

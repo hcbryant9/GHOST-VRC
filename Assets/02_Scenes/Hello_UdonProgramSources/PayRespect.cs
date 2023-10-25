@@ -9,8 +9,8 @@ public class PayRespect : UdonSharpBehaviour
     private bool isDropped = false;
     private float dropTime = 0f;
     public GhostAnimator ghost;
-    
-   
+
+    public ParticleColorChanger particleColorChanger;
     void DestroySelf()
     {
         if (ghost != null)
@@ -25,8 +25,12 @@ public class PayRespect : UdonSharpBehaviour
     {
         isDropped = true;
         dropTime = Time.time;
+        if (particleColorChanger != null)
+        {
+            particleColorChanger.ChangeParticleColorPresent(3);
+        }
         
-        
+
     }
     void Update()
     {

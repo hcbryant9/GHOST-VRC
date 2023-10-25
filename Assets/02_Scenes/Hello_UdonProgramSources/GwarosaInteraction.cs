@@ -11,7 +11,7 @@ public class GwarosaInteraction : UdonSharpBehaviour
     public GameManager manager;
     public GhostScript script;
 
-    
+    public ParticleColorChanger particleColorChanger;
 
     private bool canAdvanceText = false;
     private int scriptCounter = 0;
@@ -65,6 +65,10 @@ public class GwarosaInteraction : UdonSharpBehaviour
             }
             scriptCounter++;
             canAdvanceText = true;
+            if(particleColorChanger!= null)
+            {
+                particleColorChanger.ChangeParticleColorPresent(4);
+            }
         }
         else
         {

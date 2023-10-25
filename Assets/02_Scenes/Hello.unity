@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.008992666, g: 0.007676335, b: 0.0026707177, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8009,16 +8009,16 @@ MonoBehaviour:
   particleSystem: {fileID: 2941224593451994102}
   colorPresets:
   - serializedVersion: 2
-    key0: {r: 0.018689923, g: 0.08252319, b: 0.1981132, a: 0}
-    key1: {r: 0, g: 0.12028302, b: 0.4811321, a: 0.03529412}
-    key2: {r: 0.04930838, g: 0, b: 0.7924528, a: 0.019607844}
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 1, g: 1, b: 1, a: 0.03529412}
+    key2: {r: 1, g: 1, b: 1, a: 0.019607844}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 12914
+    ctime1: 12880
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -8037,9 +8037,9 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 4
   - serializedVersion: 2
-    key0: {r: 0.2, g: 0.19434895, b: 0.019607842, a: 0}
-    key1: {r: 0.48235294, g: 0.44846204, b: 0, a: 0.03529412}
-    key2: {r: 0.7921569, g: 0.67507905, b: 0, a: 0.019607844}
+    key0: {r: 0.43921572, g: 0.31764707, b: 0.5764706, a: 0}
+    key1: {r: 0.2542019, g: 0.18689926, b: 0.3301887, a: 0.03529412}
+    key2: {r: 0.24693894, g: 0.18155926, b: 0.3207547, a: 0.019607844}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -8067,7 +8067,7 @@ MonoBehaviour:
   - serializedVersion: 2
     key0: {r: 0.2, g: 0.019607842, b: 0.019607842, a: 0}
     key1: {r: 0.48235294, g: 0.02473987, b: 0, a: 0.03529412}
-    key2: {r: 0.7921569, g: 0, b: 0.069986165, a: 0.019607844}
+    key2: {r: 0.20000002, g: 0.019607844, b: 0.019607844, a: 0.019607844}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -8121,17 +8121,17 @@ MonoBehaviour:
     m_NumColorKeys: 4
     m_NumAlphaKeys: 4
   - serializedVersion: 2
-    key0: {r: 0.071911715, g: 0.07314997, b: 0.0754717, a: 0}
-    key1: {r: 0.085973665, g: 0.097592816, b: 0.13207549, a: 0.03529412}
-    key2: {r: 0.17093274, g: 0.16838734, b: 0.20754719, a: 0.019607844}
+    key0: {r: 0.56078434, g: 0.56078434, b: 0.5647059, a: 0}
+    key1: {r: 0.6749733, g: 0.6749733, b: 0.745283, a: 0.03529412}
+    key2: {r: 0.6039516, g: 0.6039516, b: 0.8207547, a: 0.019607844}
     key3: {r: 0.04930838, g: 0, b: 0.7924528, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 12914
-    ctime2: 63452
+    ctime1: 12880
+    ctime2: 65535
     ctime3: 65535
     ctime4: 0
     ctime5: 0
@@ -8146,12 +8146,68 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 4
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 4
   - serializedVersion: 2
-    key0: {r: 0.042167485, g: 0.2, b: 0.019607842, a: 0}
-    key1: {r: 0.070600644, g: 0.48235294, b: 0, a: 0.03529412}
-    key2: {r: 0, g: 0.7921569, b: 0.02716293, a: 0.019607844}
+    key0: {r: 0.28235295, g: 0.20392159, b: 0.14509805, a: 0}
+    key1: {r: 0.16037738, g: 0.11507925, b: 0.08170168, a: 0.03529412}
+    key2: {r: 0.4339623, g: 0.30196232, b: 0.20469919, a: 0.019607844}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 12914
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 9059
+    atime2: 46067
+    atime3: 65535
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 4
+  - serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 0.735849, g: 0.735849, b: 0.735849, a: 0.03529412}
+    key2: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0.019607844}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 12914
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 9059
+    atime2: 46067
+    atime3: 65535
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 4
+  - serializedVersion: 2
+    key0: {r: 0.8867924, g: 0.75327855, b: 0.01673192, a: 0}
+    key1: {r: 0.735849, g: 0.5654846, b: 0.25685295, a: 0.03529412}
+    key2: {r: 0.8862745, g: 0.613286, b: 0.015686281, a: 0.019607844}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -8178,12 +8234,14 @@ MonoBehaviour:
     m_NumAlphaKeys: 4
   colorChangeDuration: 2
   skyColors:
-  - {r: 0.31764707, g: 0.34117648, b: 0.5764706, a: 0}
-  - {r: 0.5764706, g: 0.56755245, b: 0.31764707, a: 0}
-  - {r: 0.5764706, g: 0.31764707, b: 0.37087446, a: 0}
-  - {r: 0.31764707, g: 0.34117648, b: 0.5764706, a: 0}
-  - {r: 0.31764707, g: 0.34117648, b: 0.5764706, a: 0}
-  - {r: 0.31764707, g: 0.34117648, b: 0.5764706, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0.43727562, g: 0.31764707, b: 0.5764706, a: 0}
+  - {r: 0.5764706, g: 0.3251341, b: 0.31764707, a: 0}
+  - {r: 0.31764707, g: 0.35161757, b: 0.5764706, a: 0}
+  - {r: 0.5606978, g: 0.5611833, b: 0.5660378, a: 0}
+  - {r: 0.2830189, g: 0.20362158, b: 0.14417943, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0.7169812, g: 0.5283187, b: 0.28408688, a: 0}
   skyMaterial: {fileID: 2100000, guid: a8d584b6ed363f5469d83cb4f8883f28, type: 2}
 --- !u!4 &675241473 stripped
 Transform:
@@ -9551,6 +9609,7 @@ MonoBehaviour:
   manager: {fileID: 1366208683}
   script: {fileID: 1433705548}
   spawner: {fileID: 1809772977}
+  particleColorChanger: {fileID: 671816694}
 --- !u!135 &870575202
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10450,6 +10509,7 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 964098350}
   ghost: {fileID: 346277642299349922}
+  particleColorChanger: {fileID: 671816694}
 --- !u!114 &964098352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13574,7 +13634,7 @@ GameObject:
   - component: {fileID: 1400731187}
   - component: {fileID: 1400731186}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Trash_Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13645,6 +13705,7 @@ MonoBehaviour:
   manager: {fileID: 1366208683}
   script: {fileID: 1809000058}
   turnSpeed: 10
+  particleColorChanger: {fileID: 671816694}
 --- !u!135 &1400731188
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18486,7 +18547,7 @@ GameObject:
   - component: {fileID: 2142066866}
   - component: {fileID: 2142066865}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Gwarosa_Interaction_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18556,6 +18617,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 2142066865}
   manager: {fileID: 1366208683}
   script: {fileID: 1513850131}
+  particleColorChanger: {fileID: 671816694}
 --- !u!135 &2142066867
 SphereCollider:
   m_ObjectHideFlags: 0
