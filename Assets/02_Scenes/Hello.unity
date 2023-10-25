@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.008992666, g: 0.0022399335, b: 0.003679601, a: 1}
+  m_IndirectSpecularColor: {r: 0.008992666, g: 0.007676335, b: 0.0026707177, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -893,7 +893,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21166
+  m_Name: pb_Mesh21162
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8176,6 +8176,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 4
+  colorChangeDuration: 2
   skyColors:
   - {r: 0.31764707, g: 0.34117648, b: 0.5764706, a: 0}
   - {r: 0.5764706, g: 0.56755245, b: 0.31764707, a: 0}
@@ -23027,7 +23028,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10007ed71600f3242afeb07197510e0e, type: 2}
+  - {fileID: 2100000, guid: 69586d0ed42be2f4fa01b869919ea48d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

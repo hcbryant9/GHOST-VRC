@@ -8,7 +8,7 @@ public class Trash : UdonSharpBehaviour
 {
     public GameManager manager;
     
-    void OnPickUp()
+    void OnPickup()
     {
         //destroy self
         //play sound
