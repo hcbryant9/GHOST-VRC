@@ -2358,7 +2358,7 @@ Material:
     - _brightness: 0.18
     - _glitterFrequencyLinearEmissive: 20
     - _knee: 2.93
-    - _range: 0.41
+    - _range: 1.6
     - _softknee: 0.39
     - _threshold: 0.72
     - footer_discord: 0
@@ -3071,5 +3071,5 @@ Material:
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _VideoResolution: {r: 1280, g: 720, b: 0, a: 0}
     - _bloomcol: {r: 0.015686275, g: 0.015686275, b: 0.015686275, a: 1}
-    - _col: {r: 0.12264148, g: 0.12264148, b: 0.12264148, a: 0.9372549}
+    - _col: {r: 0.12264142, g: 0.12264142, b: 0.12264142, a: 0.25490198}
     - _scroll: {r: 0, g: 0, b: 0, a: 0}

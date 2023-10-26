@@ -79,14 +79,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _brightness: 0.42
+    - _brightness: 0.77
     - _knee: 5.74
-    - _range: 0.1
+    - _range: 0.6
     - _softknee: 2.63
     - _threshold: 1.28
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _bloomcol: {r: 0.5188679, g: 0.8156567, b: 1, a: 1}
-    - _col: {r: 0.6698113, g: 0.8703886, b: 1, a: 0.98039216}
+    - _bloomcol: {r: 0.45641106, g: 0.03071345, b: 0.04091521, a: 1}
+    - _col: {r: 0.7058824, g: 0.19215687, b: 0.22185183, a: 0.15686275}
     - _scroll: {r: 0.5, g: 0.2, b: 0, a: 0}
