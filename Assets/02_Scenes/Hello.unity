@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.014564798, g: 0.0065660872, b: 0.0021294004, a: 1}
+  m_IndirectSpecularColor: {r: 0.0025360337, g: 0.002761661, b: 0.009470201, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20146,6 +20146,7 @@ GameObject:
   - component: {fileID: 346277642299349921}
   - component: {fileID: 346277642299349920}
   - component: {fileID: 346277642299349919}
+  - component: {fileID: 346277642299349923}
   - component: {fileID: 346277642299349918}
   m_Layer: 0
   m_Name: Ghost B - Lover
@@ -20164,7 +20165,7 @@ Animator:
   m_GameObject: {fileID: 346277642299349917}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2353bf3ac0cb0b4fb6357123929cbf6, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20271,7 +20272,27 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 346277642299349921}
   manager: {fileID: 1366208683}
+  playableDirector: {fileID: 346277642299349923}
   script: {fileID: 593655498}
+--- !u!320 &346277642299349923
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346277642299349917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 969b0977d00edc64c9c8d645b76c30c4, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 0
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 312362547423873739, guid: 969b0977d00edc64c9c8d645b76c30c4, type: 2}
+    value: {fileID: 346277642299349918}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &348341945901514589
 GameObject:
   m_ObjectHideFlags: 0
@@ -23867,7 +23888,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346277642299349917}
-  m_LocalRotation: {x: -0, y: 0.3368821, z: -0, w: 0.9415469}
+  m_LocalRotation: {x: 0, y: 0.33688208, z: 0, w: 0.94154686}
   m_LocalPosition: {x: 1.858, y: -2, z: 13.855}
   m_LocalScale: {x: 7.8622627, y: 7.8622627, z: 7.8622627}
   m_Children:

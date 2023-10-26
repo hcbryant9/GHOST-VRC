@@ -3,11 +3,12 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+using UnityEngine.Playables;
 
 public class GhostAnimator : UdonSharpBehaviour
 {
     public GameManager manager;
-    private Animator anim;
+    public PlayableDirector playableDirector;
     public GhostScript script;
     private int scriptCounter = 0;
     private int length = 8;
@@ -47,16 +48,12 @@ public class GhostAnimator : UdonSharpBehaviour
         "이제 저는 영원한 희망의 유령이 되어 정박하지 못할 배와 돌아오지 않을 사랑을 기다리며 이곳에 머물러 있습니다.",
         
     };
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        StopAnimation();
-    }
+  
 
     public void PlayAnimation()
     {
-        anim.enabled = true;
 
+        playableDirector.Play();
         //sending the script over
         if (script != null)
         {
@@ -81,11 +78,7 @@ public class GhostAnimator : UdonSharpBehaviour
             Debug.Log("the script for lover is null");
         }
     }
-    public void StopAnimation()
-    {
-        
-        anim.enabled = false;
-    }
+    
     private void Update()
     {
         //might need to change this to be in the area too because its just checking clicks
