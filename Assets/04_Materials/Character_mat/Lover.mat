@@ -79,7 +79,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _brightness: 1.05
+    - _brightness: 2.49
     - _knee: 5.74
     - _range: 0.49
     - _softknee: 2.63
