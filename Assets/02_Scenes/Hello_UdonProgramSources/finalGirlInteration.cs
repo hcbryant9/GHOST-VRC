@@ -27,6 +27,10 @@ public class finalGirlInteration : UdonSharpBehaviour
     public FollowPlayerScript follow;
     //particles
     public ParticleColorChanger particleColorChanger;
+    //reset
+    public GameObject teleport;
+
+    
 
     private string[] scriptArrEngFinal = new string[]
     {
@@ -139,10 +143,7 @@ public class finalGirlInteration : UdonSharpBehaviour
 
         if (completelyDone)
         {
-            if (follow != null)
-            {
-                follow.Follow();
-            }
+            localPlayer.TeleportTo(teleport.transform.position, teleport.transform.rotation);
         }
     }
     private void Update()

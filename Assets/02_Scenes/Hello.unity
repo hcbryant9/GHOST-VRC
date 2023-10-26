@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.010182432, g: 0.011084674, b: 0.038020737, a: 1}
+  m_IndirectSpecularColor: {r: 0.058474913, g: 0.026352305, b: 0.008548731, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1750,6 +1750,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269772252}
   m_Mesh: {fileID: -5987412628332424008, guid: 0a05b81db341de646a005f230cc767fd, type: 3}
+--- !u!1 &275945317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275945318}
+  m_Layer: 0
+  m_Name: Teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275945318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275945317}
+  m_LocalRotation: {x: 0.061531764, y: -0.6908716, z: -0.05921405, w: -0.7179165}
+  m_LocalPosition: {x: -11.962034, y: -58.149956, z: 34.586044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277843993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9843,6 +9873,7 @@ MonoBehaviour:
   sun: {fileID: 1457944534}
   follow: {fileID: 1622366799}
   particleColorChanger: {fileID: 671816694}
+  teleport: {fileID: 275945317}
 --- !u!135 &870575202
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13239,7 +13270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh289452
+  m_Name: pb_Mesh21202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
