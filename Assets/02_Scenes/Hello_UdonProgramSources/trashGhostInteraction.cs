@@ -20,6 +20,7 @@ public class trashGhostInteraction : UdonSharpBehaviour
     private int scriptCounter = 0;
     private int length = 5;
 
+    private bool inside = false;
     private bool isFinished = false;
     //particles
     public ParticleColorChanger particleColorChanger;
@@ -54,36 +55,41 @@ public class trashGhostInteraction : UdonSharpBehaviour
     private void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
 
     {
-        Debug.Log("Player has entered the interaction zone for gwarosa");
-        if (script != null)
-        {
+        inside = true;
+        if (!isFinished) {
+            Debug.Log("Player has entered the interaction zone for gwarosa");
+            if (script != null)
+            {
 
-            //if english is true -> english if false -> korean
-            if (manager != null)
-            {
-                if (manager.isEnglish)
+                //if english is true -> english if false -> korean
+                if (manager != null)
                 {
-                    script.SendScript(scriptArrEngTrash[0]);
+                    if (manager.isEnglish)
+                    {
+
+                        script.SendScript(scriptArrEngTrash[0]);
+                    }
+                    else
+                    {
+                        script.SendScript(scriptArrKorTrash[0]);
+                    }
                 }
-                else
+                scriptCounter++;
+                canAdvanceText = true;
+                if (particleColorChanger != null)
                 {
-                    script.SendScript(scriptArrKorTrash[0]);
+                    particleColorChanger.ChangeParticleColorPresent(5);
                 }
             }
-            scriptCounter++;
-            canAdvanceText = true;
-            if (particleColorChanger!= null)
+            else
             {
-                particleColorChanger.ChangeParticleColorPresent(5);
+                Debug.Log("the script for trash is null");
             }
-        }
-        else
-        {
-            Debug.Log("the script for trash is null");
         }
     }
     private void OnPlayerTriggerExit(VRC.SDKBase.VRCPlayerApi player)
     {
+        inside = false;
         script.ClearText();
         scriptCounter = 0;
         canAdvanceText = false;
@@ -112,6 +118,23 @@ public class trashGhostInteraction : UdonSharpBehaviour
                     isFinished = true;
                     director.Play();
                 }
+            }
+        }
+        if (isFinished)
+        {
+            if(manager.trashCount > 4)
+            {
+                //change particles
+                //change text
+                particleColorChanger.ChangeParticleColorPresent(1);
+                if (manager.isEnglish && inside)
+                {
+                    script.SendScript("Thank you, traveler. The world is a little cleaner now. I'm not in pain anymore.");
+                } else if (inside)
+                {
+                    script.SendScript("감사합니다 여행자님. 이제 세상이 조금 깨끗해졌네요. 더이상 고통스럽지 않아요.");
+                }
+                
             }
         }
     }
