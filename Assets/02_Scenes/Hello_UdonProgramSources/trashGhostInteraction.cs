@@ -3,7 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+using UnityEngine.Playables;
 public class trashGhostInteraction : UdonSharpBehaviour
 {
     //player data
@@ -18,10 +18,14 @@ public class trashGhostInteraction : UdonSharpBehaviour
     //script variables
     private bool canAdvanceText = false;
     private int scriptCounter = 0;
-    private int length = 6;
+    private int length = 5;
 
+    private bool isFinished = false;
     //particles
     public ParticleColorChanger particleColorChanger;
+
+    //rotating
+    public PlayableDirector director;
 
     private string[] scriptArrEngTrash = new string[]
     {
@@ -41,6 +45,8 @@ public class trashGhostInteraction : UdonSharpBehaviour
       "그 외면의 무게가 저를 분노와 슬픔으로 가득 채우고 있어요. 마음만 있다면 제 무덤을 더럽히는 잔해들을 치우는 데 도움을 주시길 간청합니다. ",
       "그러면 그들의 버림으로 인한 고통을 조금이나마 덜을 수 있을 것 같아요."
     };
+
+
     void Start()
     {
         localPlayer = Networking.LocalPlayer;
@@ -103,13 +109,11 @@ public class trashGhostInteraction : UdonSharpBehaviour
                 if (scriptCounter > length)
                 {
                     canAdvanceText = false;
-                    Rotate();
+                    isFinished = true;
+                    director.Play();
                 }
             }
         }
     }
-    void Rotate()
-    {
-        transform.Rotate(rotationAxis, turnSpeed * Time.deltaTime);
-    }
+    
 }
