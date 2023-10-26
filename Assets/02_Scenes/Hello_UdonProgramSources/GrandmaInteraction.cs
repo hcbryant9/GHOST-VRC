@@ -165,7 +165,7 @@ public class GrandmaInteraction : UdonSharpBehaviour
         {
             if ((canAdvanceText && localPlayer != null) && playerIsInArea)
             {
-                if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("trigger pressed"))
+                if (Input.GetMouseButtonDown(0))
                 {
                     if (manager != null)
                     {
