@@ -20,17 +20,22 @@ public class GrandmaInteraction : UdonSharpBehaviour
     private bool playerIsInArea;
     private string[] scriptArrEngIntro = new string[]
     {
-        "Well, Hello Again",
-        "Don't worry, dearie; you're young. You'll learn in time that I don't live with my body.",
-        "You can visit me wherever you please. It's just here where there's nothing to distract you from me",
-        "I live in your head, along with everyone else you've met, alive and dead. You just don't have a body to project me onto any longer",
-        "I'm very much still me. I just have a little less ... autonomy than I once did",
-        "Enough of my blabbering; thank you for humoring me, darling. Let's go around and meet some of the other ghosts here.",
-        "No one I'm aware of.",
-        "No one truly knows anyone, same for oneself.",
-        "The ghosts you see are evoked by their reminders here. They'll be just as real as they ever were, they just, like myself, have a little less autonomy",
-        "Ah, there I go being cryptic again; it's the only thing the dead know how to be.",
-        "There's much to learn; let's go!"
+        "Hello, darling! It’s been some time, hasn’t it?",
+        "I only ever see you when you visit my grave. I hope you realize you can visit me anywhere. ",
+
+        "It’s just here where there’s nothing to distract you from me. ",
+
+        "...you seem confused. I’m only an idea. Everyone you know is an idea. Ideas live in the mind, not with the objects they’re associated with.",
+
+        "I’m still me, just with a little less autonomy.",
+
+        "There are reminders of many dead people here. You never knew them as you know me, but you’ll get a gist.", 
+        "And they’ll talk. As truly as they ever did when they were conscious.",
+
+        "That’s the power of cemeteries. Keeping ideas alive.",
+        "",
+        "",
+        "",
     };
     private string[] scriptArrKorIntro = new string[]
     {
