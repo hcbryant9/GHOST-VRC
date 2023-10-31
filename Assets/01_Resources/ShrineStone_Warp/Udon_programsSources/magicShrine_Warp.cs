@@ -9,6 +9,7 @@ public class magicShrine_Warp : UdonSharpBehaviour
     [SerializeField] private GameObject targetAnimator;
     private Animator _animator;
 
+
     public FT_TeleportPortal ftTeleportPortal;
     private bool isTeleporting;
 
@@ -46,7 +47,7 @@ public class magicShrine_Warp : UdonSharpBehaviour
     public void ClosingAnimation()
     {
         _animator.SetBool("Close", true);
-        Debug.Log("テレポートスタート");
+        //Debug.Log("テレポートスタート");
     }
 
     public void ResetAnimation()

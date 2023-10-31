@@ -22,6 +22,7 @@ public class Korean : UdonSharpBehaviour
         Debug.Log("english");
         if (ambient != null)
         {
+            Debug.Log("playing audio");
             ambient.Play();
         }
       

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.019862672, g: 0.008990492, b: 0.038020737, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9861,7 +9861,7 @@ MonoBehaviour:
   interactTextPlacement: {fileID: 0}
   interactText: English
   interactTextGO: {fileID: 0}
-  proximity: 2
+  proximity: 84
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
@@ -14495,7 +14495,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 02837f646bc1be341b32919b63a44807, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4e133242114ca3d47a74b100b6000257, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.526
   m_Pitch: 1
@@ -18478,7 +18478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809772976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 21.643, z: 0}
+  m_LocalPosition: {x: -19.49, y: 21.643, z: 1.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
