@@ -2355,10 +2355,10 @@ Material:
     - _WaveSpeed: 10
     - _ZTest: 4
     - _ZWrite: 0
-    - _brightness: 0.18
+    - _brightness: 0.15
     - _glitterFrequencyLinearEmissive: 20
-    - _knee: 2.93
-    - _range: 1.6
+    - _knee: 2.62
+    - _range: 0.63
     - _softknee: 0.39
     - _threshold: 0.72
     - footer_discord: 0
@@ -3071,5 +3071,5 @@ Material:
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _VideoResolution: {r: 1280, g: 720, b: 0, a: 0}
     - _bloomcol: {r: 0.015686275, g: 0.015686275, b: 0.015686275, a: 1}
-    - _col: {r: 0.12264142, g: 0.12264142, b: 0.12264142, a: 0.25490198}
+    - _col: {r: 0.7735849, g: 0.13136347, b: 0.13136347, a: 0.5411765}
     - _scroll: {r: 0, g: 0, b: 0, a: 0}

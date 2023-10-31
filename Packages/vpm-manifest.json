@@ -15,7 +15,7 @@
   },
   "locked": {
     "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.25",
+      "version": "0.1.26",
       "dependencies": {}
     },
     "com.vrchat.base": {
